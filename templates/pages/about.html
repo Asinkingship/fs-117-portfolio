@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}{% endblock title %}
+{% load static %}
+
+{% block content %}
+
+<section class="about-section center-row">
+
+    <div class="about-image-container center-row">
+        <img src="/static/img/logo.png" alt="logo">
+
+    </div>
+
+    <div class="about-description-container center-column">
+        <h1>My role as a developer</h1>
+        <h2>KB Osborne</h2>
+
+        <p>As a beginner software and web developer, I have foundational skills in HTML, JavaScript, jQuery, Django, and Python. I enjoy exploring new technologies and continuously expanding my knowledge base. My enthusiasm for learning drives me to stay updated with the latest trends and best practices in web development, ensuring that I can effectively contribute to any project I undertake.</p>
+    
+        <div class="skills-container center-column">
+    
+        <h2>skills</h2>
+
+        <div class="skills-list center-row">       
+            <label class="text-label">HTML</label>
+            <label class="text-label">JavaScript</label>
+            <label class="text-label">node.js</label>
+            <label class="text-label">django</label>
+            <label class="text-label">python</label>
+            <label class="text-label">jQuery</label>
+        </div>
+
+    </div>
+    
+    </div>
+
+</section>
+<a href="{% url 'home' %}">Go to home</a>
+
+{% endblock content %}
