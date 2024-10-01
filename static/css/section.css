@@ -29,12 +29,14 @@
 /* Projects section*/
 
 .projects-section {
-    border: solid red 2px;
     margin-top: 4rem;
 }
 
 .projects-list {
     margin: 2rem 0px;
+    flex-wrap: wrap;
+    gap: 4rem;
+    align-items: baseline;
 }
 
 .project-card {
@@ -89,6 +91,8 @@ a p:nth-child(4), .experience-card p:nth-child(4) {
     flex-wrap:  wrap;
     padding: 1rem;
     margin: 2rem 0px;
+    flex-direction: column;
+    align-items: baseline;
 }
 
 .experience-skills {

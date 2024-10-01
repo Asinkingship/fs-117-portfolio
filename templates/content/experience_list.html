@@ -8,24 +8,28 @@
 
 <section class="experience-section center-column">
     <h2>Experience/Education</h2>
+
     <div class="experience-list center-row"></div>
 
-        <div class="experience-card">
-            
-                <p>Name of school or company</p>
-                <p>Coursename or job position</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid possimus voluptati!</p>
-                <p>Month YYYY - Month YYYY</p>
+        {% for experience in experience %}
+
+            <div class="experience-card">
+                
+                <p>{{ experience.name }}</p>
+                <p>{{ experience.title }}</p>
+                <p>{{ experience.description }}</p>
+                <p>{{ experience.period }}</p>
 
                 <div class="experience-skills">
-                    <label for="" class="text-label">skill 1</label>
-                    <label for="" class="text-label">skill 2</label>
-                    <label for="" class="text-label">skill 3</label>
-                    <label for="" class="text-label">skill 4</label>
-                    <label for="" class="text-label">skill 5</label>
-                </div>
-        </div>
 
+                    {% for skill in experience .skills.all %}
+
+                    <label class="text-label">{{ skill.name }}</label>
+
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
     </div>
 </section>
 
